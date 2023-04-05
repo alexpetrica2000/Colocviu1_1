@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Colocviul_1MainActivity"
         tools:targetApi="31">
         <activity
+            android:name=".Colocviul_1SecondaryActivity"
+            android:exported="false" />
+        <activity
             android:name=".Colocviul_1MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +23,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".StartedService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
     </application>
 
 </manifest>
