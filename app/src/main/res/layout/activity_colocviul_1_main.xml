@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Colocviul_1MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/north_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:gravity="center"
+                android:text="@string/north">
+
+            </Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/east_button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/east">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/west_button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginStart="130dp"
+                    android:text="@string/west">
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_marginStart="150dp"
+                    android:id="@+id/south_button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/south">
+                </Button>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/text_field"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <Button
+                android:layout_marginStart="50dp"
+                android:id="@+id/navigate_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/navigate_to_secondary_activity">
+            </Button>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
